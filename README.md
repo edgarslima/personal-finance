@@ -34,5 +34,15 @@ mysql
 
 ```
 
+
+TO DO:
+
+- [x] Database definition
+- [x] Database Model
+- [x] Database creation and scripting
+- [ ] Defining the application architecture
+- [ ] ...
+
+
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
