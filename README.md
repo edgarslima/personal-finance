@@ -30,6 +30,8 @@ mysql
 | budget_group      |
 | chart_of_accounts |
 | ledger_entries    |
+| user              |
+| group_user        |
 +-------------------+
 
 ```
