@@ -42,9 +42,13 @@ TO DO:
 - [x] Database definition
 - [x] Database Model
 - [x] Database creation and scripting
-- [ ] Defining the application architecture
+- [x] Defining the application architecture
+- [ ] Backend in node js
+- [ ] Backend in C# (in the future for comparisons)
 - [ ] ...
 
+### Status
+Under construction, little else still working
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
