@@ -35,6 +35,24 @@ module.exports = {
 
         await pool.query(strQuery, [id]);
 
+        response.status = 200;
+        return response.json({"status": "OK"})
+
     },
+
+    async update (request, response) {
+        const {id} = request.params;
+        const {acc_name, acc_grpusr_id, acc_status} = request.body;
+        var strQuery = 'UPDATE accounts SET acc_name = ?, acc_grpusr_id = ?, acc_status = ?  ';
+        strQuery += ' WHERE acc_id = ? ';
+
+        console.log(strQuery);
+
+        await pool.query(strQuery, [acc_name, acc_grpusr_id, acc_status, id]);
+
+        response.status = 200;
+        return response.json({"status": "OK"})
+
+    }
 
 }
