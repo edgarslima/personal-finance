@@ -45,7 +45,17 @@ TO DO:
 - [x] Defining the application architecture
 - [ ] Backend in node js
     - [x] Structure of controllers and routes
-    - [ ] Implements JWT in backend module (node js)
+    - [ ] Controllers
+        - [x] Users
+        - [ ] Group User
+        - [x] Account
+        - [x] Account Type
+        - [ ] Chart of Accounts
+        - [ ] Budget Group
+        - [ ] Budget
+        - [ ] Leadger Entirires 
+    - [ ] Implement log in application
+    - [ ] Implement JWT in backend module (node js)
 - [ ] Backend in C# (in the future for comparisons)
 - [ ] ...
 

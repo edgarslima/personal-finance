@@ -76,7 +76,7 @@ CREATE TABLE ledger_entries  (
 
 CREATE TABLE users  (
   usr_key varchar(255) NOT NULL,
-  usr_passord varchar(255) NOT NULL,
+  usr_password varchar(255) NOT NULL,
   usr_grpusr_id int NOT NULL,
   usr_status smallint NOT NULL,
   usr_creation datetime NOT NULL,
