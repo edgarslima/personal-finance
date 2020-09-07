@@ -44,6 +44,8 @@ TO DO:
 - [x] Database creation and scripting
 - [x] Defining the application architecture
 - [ ] Backend in node js
+    - [x] Structure of controllers and routes
+    - [ ] Implements JWT in backend module (node js)
 - [ ] Backend in C# (in the future for comparisons)
 - [ ] ...
 
