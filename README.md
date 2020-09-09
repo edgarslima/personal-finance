@@ -37,7 +37,7 @@ mysql
 ```
 
 
-TO DO:
+### TO DO:
 
 - [x] Database definition
 - [x] Database Model
@@ -47,13 +47,13 @@ TO DO:
     - [x] Structure of controllers and routes
     - [ ] Controllers
         - [x] Users
-        - [ ] Group User
+        - [x] Group User
         - [x] Account
         - [x] Account Type
-        - [ ] Chart of Accounts
-        - [ ] Budget Group
+        - [x] Chart of Accounts
+        - [x] Budget Group
         - [ ] Budget
-        - [ ] Leadger Entirires 
+        - [ ] Leadger Entirires
     - [ ] Implement log in application
     - [ ] Implement JWT in backend module (node js)
 - [ ] Backend in C# (in the future for comparisons)

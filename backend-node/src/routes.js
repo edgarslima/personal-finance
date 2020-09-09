@@ -3,6 +3,10 @@ const express = require('express');
 const accountController = require('./controllers/accountController');
 const accountTypeController = require('./controllers/accountTypeController');
 const userController = require('./controllers/userController');
+const groupUserController = require('./controllers/groupUserController');
+const budgetGroupController = require('./controllers/budgetGroupController');
+const chartOfAccountsController = require('./controllers/chartOfAccountsController');
+
 
 const routes = express.Router();
 
@@ -11,6 +15,13 @@ routes.get('/user/:usr_key', userController.record);
 routes.post('/user', userController.create);
 routes.delete('/user/:usr_key', userController.delete);
 routes.put('/user/:usr_key', userController.update);
+
+routes.get('/group_user', groupUserController.index);
+routes.get('/group_user/:id', groupUserController.record);
+routes.post('/group_user', groupUserController.create);
+routes.delete('/group_user/:id', groupUserController.delete);
+routes.put('/group_user/:id', groupUserController.update);
+
 
 
 routes.get('/accounts', accountController.index);
@@ -25,5 +36,23 @@ routes.post('/account_type', accountTypeController.create);
 routes.delete('/account_type/:id', accountTypeController.delete);
 routes.put('/account_type/:id', accountTypeController.update);
 
-module.exports = routes;
+routes.get('/budget_group', budgetGroupController.index);
+routes.get('/budget_group/:id', budgetGroupController.record);
+routes.post('/budget_group', budgetGroupController.create);
+routes.delete('/budget_group/:id', budgetGroupController.delete);
+routes.put('/budget_group/:id', budgetGroupController.update);
 
+routes.get('/budget_group', budgetGroupController.index);
+routes.get('/budget_group/:id', budgetGroupController.record);
+routes.post('/budget_group', budgetGroupController.create);
+routes.delete('/budget_group/:id', budgetGroupController.delete);
+routes.put('/budget_group/:id', budgetGroupController.update);
+
+routes.get('/chart_of_accounts', chartOfAccountsController.index);
+routes.get('/chart_of_accounts/:id', chartOfAccountsController.record);
+routes.post('/chart_of_accounts', chartOfAccountsController.create);
+routes.delete('/chart_of_accounts/:id', chartOfAccountsController.delete);
+routes.put('/chart_of_accounts/:id', chartOfAccountsController.update);
+
+
+module.exports = routes;
