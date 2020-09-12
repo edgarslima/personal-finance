@@ -6,7 +6,8 @@ const userController = require('./controllers/userController');
 const groupUserController = require('./controllers/groupUserController');
 const budgetGroupController = require('./controllers/budgetGroupController');
 const chartOfAccountsController = require('./controllers/chartOfAccountsController');
-
+const budgetController = require('./controllers/budgetController');
+const leadgerEntiriresController = require('./controllers/leadgerEntiriresController');
 
 const routes = express.Router();
 
@@ -53,6 +54,19 @@ routes.get('/chart_of_accounts/:id', chartOfAccountsController.record);
 routes.post('/chart_of_accounts', chartOfAccountsController.create);
 routes.delete('/chart_of_accounts/:id', chartOfAccountsController.delete);
 routes.put('/chart_of_accounts/:id', chartOfAccountsController.update);
+
+routes.get('/budget', budgetController.index);
+routes.get('/budget/:id', budgetController.record);
+routes.post('/budget', budgetController.create);
+routes.delete('/budget/:id', budgetController.delete);
+routes.put('/budget/:id', budgetController.update);
+
+
+routes.get('/ledger_entries', leadgerEntiriresController.index);
+routes.get('/ledger_entries/:id', leadgerEntiriresController.record);
+routes.post('/ledger_entries', leadgerEntiriresController.create);
+routes.delete('/ledger_entries/:id', leadgerEntiriresController.delete);
+routes.put('/ledger_entries/:id', leadgerEntiriresController.update);
 
 
 module.exports = routes;
